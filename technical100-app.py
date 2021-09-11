@@ -6,7 +6,7 @@ import cufflinks as cf
 from plotly import graph_objs as go
 
 st.set_page_config(
-    page_title="SUNSET50 - Technical",
+    page_title="SUNSET100 - Technical",
     page_icon="favicon.ico",
 )
 
@@ -21,12 +21,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.subheader('SUNSET50 🌞')
+st.sidebar.subheader('SUNSET100 🌞')
 
 # Retrieving tickers data
 ticker_list = pd.read_csv("https://raw.githubusercontent.com/mattapol/SUNSET-Tech/main/set100.csv")
 symbols = ticker_list['Symbol'].sort_values().tolist()
-ticker = st.sidebar.selectbox('Choose a SET50 Stock 📈', ticker_list) # Select ticker symbol
+ticker = st.sidebar.selectbox('Choose a SET100 Stock 📈', ticker_list) # Select ticker symbol
 
 infoType = st.sidebar.radio(
         "Choose an info type",
