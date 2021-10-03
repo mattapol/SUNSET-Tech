@@ -40,7 +40,7 @@ else:
     ticker_lists = ticker_list[362:392]
     
 symbols = ticker_lists['Symbol'].sort_values().tolist()
-ticker = st.sidebar.selectbox('Choose adlfdklflsfdsfd SET Stock 📈', ticker_lists) # Select ticker symbol
+ticker = st.sidebar.selectbox('Choose a SET Stock 📈', ticker_lists) # Select ticker symbol
 infoType = st.sidebar.radio(
         "Choose an info type",
         ('Fundamental', 'Statistics', 'Technical', 'Short Note')
