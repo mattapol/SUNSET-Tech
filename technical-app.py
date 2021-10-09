@@ -62,10 +62,10 @@ if(infoType == 'Fundamental'):
     st.info(info['longBusinessSummary'])
 
 elif(infoType == 'Statistics'):
-    n_days = st.sidebar.number_input("Stock Prices Over Past... (1-365) days📅", 
+    n_days = st.sidebar.number_input("Stock Prices Over Past... (Max = 10 Year = 3,650 days)📅"), 
                                                 value=30,
                                                 min_value=1, 
-                                                max_value=365, 
+                                                max_value=3650, 
                                                 step=1)
     past_y = n_days * 1 + 1
 
